@@ -1,0 +1,84 @@
+@use '../../global.scss';
+
+.headerContainer{
+    max-width: 80rem;
+    padding: 1rem 5rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logoContainer{
+        span{
+            font-size: 2rem;
+            font-weight: 700;;
+        }
+
+        .white{
+            color:#fff;
+        }
+        .red{
+            color: var(--text)
+        }
+    }
+    nav a{
+        margin: 0 .5rem;
+        color: #fff;
+        text-decoration: none;
+        font-size:  1.2rem;
+        font-weight: 400;
+
+        &:hover{
+            color: var(--text);
+            cursor: pointer;
+            transition: .2s;
+        }
+
+    }
+
+    button{
+        display: flex;
+        align-items: center;
+        padding: .2rem 1rem;
+        font-size: .875rem;
+        border-radius: 8px;
+        border: 1px solid transparent;
+        font-weight: 700;
+
+        img{
+            margin-right: .5rem;
+        }
+
+        &:hover{
+            background-color: var(--text);
+            cursor: pointer;
+            filter: brightness(1.2);
+            transition: .2s;
+        }
+    }
+}
+
+@media (max-width: 670px){
+    .headerContainer{
+        nav a{
+            display: none;
+        }
+        button{
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 1024px){
+    .headerContainer{
+        padding: 1rem;
+        nav a{
+            font-size: 1rem;
+        }
+        button{
+            font-size: .75rem;
+            img{
+                width: 30px;
+            }
+        }
+    }
+}

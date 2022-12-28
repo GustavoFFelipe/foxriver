@@ -1,0 +1,72 @@
+@use '../../global.scss';
+
+.containerSamples{
+    max-with: 80rem;
+    width: 100%;
+    margin: 0 auto;
+    color: #fff;
+    padding: 8rem 0;
+    padding-bottom: 0;
+
+    h2{
+        font-size: 32px;
+        color: var(--white);
+
+        span{
+            color: var(--text);
+        }
+    }   
+}
+
+.samplesContainerItems{
+    display: flex;
+    padding: 5rem 1rem;
+
+    .samplesItems{
+        margin: 0 auto;
+    }
+}
+.samplesItem{
+    margin-bottom: 5rem;
+    div{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        .textOrange{
+            color: var(--text);
+            font-weight: 400;
+        }
+        span{
+            font-family: 'Inter', sans-serif;
+            font-size: 20px;
+            color: var(--text-gray);
+            color: var(--white);
+        }
+    }
+}
+
+@media(max-width: 1020px){
+    .containerSamples{
+
+        width: 80%;
+    }
+
+    .samplesContainerItems{
+        display: block;
+    }
+    .samplesItem{
+        div{
+            justify-content: space-between ;
+        }
+    }
+}
+@media(max-width:580px){
+    .containerSamples{
+        padding: 5rem .5rem;
+    }
+    .samplesItem{
+        .images{
+            width: 80%;
+        }
+    }
+}

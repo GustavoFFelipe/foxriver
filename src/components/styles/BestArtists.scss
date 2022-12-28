@@ -1,0 +1,101 @@
+@use '../../global.scss';
+
+.containerArtists{
+    max-width: 80rem;
+    width: 100%;
+    color: var(--white);
+    margin: 0 auto;
+    text-align: center;
+    
+    h2{
+        padding-bottom: 4rem;
+    }
+    .textOrange{
+        color: var(--text);
+        
+    }
+}
+
+.artists{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 0 auto;
+
+    .card{
+        width: 300px;
+        
+        
+        margin: 2rem auto;
+        border-radius: 8px;
+
+        img{
+            width:80px;
+        }
+        .links{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            background-color: var(--text-gray);
+            &:hover{
+                background-color: var(--text);
+                filter: brightness(.9);
+                transition: filter .5s;
+                cursor: pointer;
+            }
+            p{
+                font-size: 18px;
+                font-weight: 400;
+                font-family: 'Montserrat', sans-serif;
+            }
+        }
+    }
+    
+}
+
+.footerLink{
+    width: 300px;
+    font-size: 20px;
+}
+.footerLink:hover{
+    color: var(--text);
+    transition: .3s;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px){
+    .containerArtists{
+        .card{
+        width: 80%;
+        img{
+            width: 50px;
+        }
+        .links{
+            p{
+                font-size: 14px;
+
+            }
+        }
+    }
+    }
+}
+
+@media (max-width:680px){
+    .containerArtists{
+        .artists{
+            grid-template-columns: 1fr;
+            margin: 0 auto;
+        }
+        .card{
+            margin: .6rem auto;
+            .links{
+                width:45%;
+                margin: 0 auto;
+            }
+        }
+    }
+
+}

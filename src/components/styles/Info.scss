@@ -1,0 +1,136 @@
+@use '../../global.scss';
+
+.containerInfo{
+    display: flex;
+    color: var(--white);
+    .info-sidebar{
+        width: 200px;
+
+        border-right: 2px solid var(--text-gray);
+        .divisionText{
+            padding: 1.5rem 1rem;
+
+            h2{
+                font-size: 50px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 400;
+            }
+            span{
+                font-size: 20px;
+                color: var(--text-gray);
+                font-weight: 600;
+            }
+        }
+    }
+    
+    .containerRows{
+        img{
+            width: 970px;
+        }
+        .containerText{
+            display: flex;
+            justify-content: space-around;
+
+            .textItem{
+                width: 25rem;
+                padding: 1rem 1rem;
+
+                p{
+                    padding-bottom: 2rem;
+                }
+                a{
+                    font-weight: 600;
+                    color: var(--white);
+                    text-decoration: underline;
+
+                    &:hover{
+                        color: var(--text);
+                        transition: color .3s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1440px){
+    .containerInfo{
+        .containerRows{
+            img{
+                max-width: 970px;
+                width: 95%
+            }
+        }
+
+    
+    }
+}
+
+@media (max-width:950px){
+.containerInfo{
+
+    .info-sidebar{
+        .divisionText{
+            
+
+            h2{
+                font-size: 32px;
+            }
+            
+            
+        }
+    }
+    .containerRows{
+        
+        .textItem{
+            max-width: 25rem;
+            p{
+                width: 80%;
+                font-size: 14px;
+            }
+            a{
+                font-size: 14px;;
+            }
+        }
+        img{
+            max-width: 970px;
+            width: 85%;
+        }
+    }
+}
+
+}
+
+@media(max-width:950px){
+    .containerInfo{
+        padding: 0;
+        display: block;
+        max-width: 400px;
+        margin: 0 auto;
+        .info-sidebar{
+            display: flex;
+            justify-content: center;
+            
+            border: none;
+            width: 400px;
+            margin: 0 auto;
+            text-align: center;
+            height: auto;;
+        }
+        .containerRows{
+            width: 400px;
+            .textItem{
+                p{
+                    margin: 0 auto;
+                }
+            }
+
+            img{
+                display: flex;
+                justify-content: center;
+                width: 98%;
+                margin: 0 auto;
+            }
+        }
+    }
+}

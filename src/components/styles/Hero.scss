@@ -1,0 +1,180 @@
+@use '../../global.scss';
+
+.containerHero{
+    max-width: 80rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 100px;
+    p{
+        color: var(--white);
+    }
+
+    .textArtists{
+        text-align: justify;
+
+        p{
+            font-family:'Montserrat', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.35;
+            max-width: 22rem;
+            width: 100%;
+            margin: 0 auto;
+            margin-bottom: 2rem
+        }
+        .artists{
+            display: flex;
+            width:200px;
+            align-items: center;
+            gap: 20px;
+            img{
+                width: 130px;
+            }
+
+            p{
+                width: 200px;
+                margin-bottom: 0;
+                a{
+                    color: var(--white);
+                    &:hover{
+                        color: var(--text);
+                        transition: .3s ease;
+                    }
+                } 
+            }
+    }
+
+}
+
+    .heroText{
+        width: 25rem;
+        color: var(--white);
+        font-size: 40px;
+        font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
+        text-align: left;
+
+        margin: 0 5.62rem;
+
+        span{
+            color: var(--text);
+        }
+    }
+
+    .badge{
+        img{
+            width: 200px;
+            
+        }
+    }
+}   
+@media (max-width: 1024px){
+    .containerHero{
+        margin: 0 auto;
+        
+        padding:2rem 3rem;
+        width: 90%;
+        padding-top: 60px;
+
+        .textArtists{
+            font-size: 1rem;
+            line-height: 1;
+            width: 90%;
+        
+            p{
+                width: 200px;
+            }
+            .artists{
+                margin: 0 auto;
+                gap: 5px;
+                display: flex;
+                align-items: center;
+                
+                img{
+                    width: 90px;
+                }
+                p{
+                    width: 126px;
+                    font-size: 16px;;
+                }
+            }
+        }    
+        .heroText{
+            width: 14rem;
+            p{
+                margin: 0 auto;
+                width: 14rem;
+                font-size: 25px;
+            }
+        }
+    }
+    .badge{
+        width: 200px;
+        img{
+            margin: 0 auto;
+            width: 200px;
+        }
+    }
+}
+@media (max-width: 930px){
+
+    .containerHero{
+
+        .heroText{
+            width: 14rem;
+            margin: 0 3rem;;
+            p{
+                width: 14rem;
+                font-size: 25px;
+            }
+        }
+    }
+}    
+
+
+@media (max-width: 800px){
+    .containerHero{
+        width: 100%;
+        padding-top: 60px;
+        grid-template-columns: 1fr;
+        gap: 0;
+
+        .textArtists{
+            .artists{
+                margin: 0 auto;
+                width: 320px;
+                justify-content: space-around;
+                p{
+                    width: 180px;
+                    font-size: 14px;
+                    margin: 0;
+                }
+            }
+            p{
+                width: 320px;
+                margin: 0 auto;
+                margin-bottom: 10px;
+            }
+
+            
+        }
+
+        .heroText{
+            width: 90%;
+            margin: 60px auto 0 auto;
+            padding-top: 1rem;
+            p{
+                width: 400px;
+            }
+            
+        }
+
+        .badge{
+            display: none;
+        }
+        
+        
+    }
+
+}

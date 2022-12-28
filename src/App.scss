@@ -1,0 +1,19 @@
+@use './global.scss';
+
+.container{
+    max-width: 80rem;
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    padding: 1rem 5rem;
+}
+
+@media (max-width:680px){
+
+}
+
+@media (max-width: 1024px){
+    .container{
+        padding: 1rem;
+    }
+}

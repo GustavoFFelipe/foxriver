@@ -1,0 +1,71 @@
+@use '../../global.scss';
+
+
+.containerGallery{
+    max-width: 80rem;
+    width: 100%;
+    padding: 100px 0;
+    margin: 0 auto;
+
+    .rows{
+        display: flex;
+        margin-bottom: 60px;
+        gap: 20px;
+        margin: 0 auto;
+        padding: 20px;
+        justify-content: center;
+
+        img{
+            max-width: 300px;
+            width: 100%;
+            padding: 5px;
+            border: 1px solid var(--text-gray);
+
+        }
+
+        .rowTop{
+            margin-bottom: 0px;
+        }
+    }
+}
+
+@media (max-width: 1440px){
+    .containerGallery{
+
+        .rows{
+            width: 300px;
+            img{
+                width: 80%;
+            }
+        }
+    }
+
+}
+@media (max-width: 1010px){
+    .containerGallery{
+
+        .rows{
+            width: 300px;
+            img{
+                width: 80%;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 950px){
+    .containerGallery{
+        max-width: 600px;
+        margin: 0 auto;
+        .rows{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 600px;
+            margin-left: -3rem;
+
+        }
+    }
+
+}
